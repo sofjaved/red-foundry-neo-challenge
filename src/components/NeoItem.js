@@ -23,11 +23,11 @@ const NeoItem = ({ neo }) => {
           <Text style={styles.value}>{formatVelocity(velocity)} mph</Text>
         </View>
         <View style={styles.detailRow}>
-          <Text style={styles.label}>Miss Distance:</Text>
+          <Text style={styles.label}>Miss distance:</Text>
           <Text style={styles.value}>{formatDistance(missDistance)} miles</Text>
         </View>
         <View style={styles.detailRow}>
-          <Text style={styles.label}>Potentially Hazardous:</Text>
+          <Text style={styles.label}>Potentially hazardous:</Text>
           <Text style={[styles.value, isHazardous ? styles.hazardText : styles.safeText]}>
             {isHazardous ? 'YES' : 'No'}
           </Text>

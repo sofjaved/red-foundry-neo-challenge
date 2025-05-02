@@ -38,7 +38,7 @@ A React Native mobile application that displays Near-Earth Objects (asteroids) p
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/sofjaved/near-earth-objects.git
+git clone https://github.com/sofjaved/red-foundry-neo-challenge
 cd near-earth-objects
 ```
 

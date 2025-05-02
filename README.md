@@ -54,6 +54,8 @@ yarn install
 
 ```bash
 npx expo start
+# or
+npm start
 ```
 
 4. Run the application:

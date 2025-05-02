@@ -78,7 +78,7 @@ This application uses NASA's NEO Web Service API:
 ## Project Structure
 
 ```
-nasa-neo-tracker/
+red-foundry-neo-challenge/
 ├── src/
 │   ├── api/          # API connection logic
 │   ├── components/   # Reusable UI components

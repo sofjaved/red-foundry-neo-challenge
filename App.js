@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react'
+import WelcomeScreen from './src/screens/WelcomeScreen'
+import MainScreen from './src/screens/MainScreen'
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [showMainScreen, setShowMainScreen] = useState(false)
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (!showMainScreen) {
+    return <WelcomeScreen onGetStarted={() => setShowMainScreen(true)} />
+  }
+  
+  return <MainScreen onBack={() => setShowMainScreen(false)}/>
+}
